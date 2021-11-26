@@ -3,17 +3,17 @@
 
 
 
-class Dados extends  {
+class Dados {
 
-	private string $dados = [];
+	private string $dados;
 
 	public function __construct(){
-		$this->dados = getDados();
+		$this->dados = setDados();
 	}
 
 	   public function getDados()
     {
-        return $this->dados;
+        return $this->dados = [];
     }
 
 

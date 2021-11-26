@@ -2,8 +2,7 @@
 
 use Dados;
 
-class DadosBanco extends Dados
-($codigo_banco = '', $moeda = '', $fator_vencimento = '', ){
+class DadosBanco extends Dados {
 
 
 
@@ -12,7 +11,7 @@ class DadosBanco extends Dados
 	private string $fator_vencimento;
 
 
-	public function__construct() {
+	public function __construct() {
 
 		$this->codigo_banco = '';
 		$this->moeda = '';

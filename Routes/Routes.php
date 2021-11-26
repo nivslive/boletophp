@@ -1,21 +1,18 @@
 <?php
 namespace config;
-use ConfigRoutes;
-$route = new ConfigRoutes->integrate;
-
+use Route;
 
 //Unir os arquivos MVC por meio de uma rota.
 
 
 
-
 //ROTA ITAÚ
-//$route("ItauDados", "ItauLayout", "ItauController");
+Route::integrate("Itau", "ItauLayout", "ItauController");
 
 //ROTA SANTANDER
-//$route("SantanderDados", "SantanderLayout", "SantanderController");
+//Route::integrate("SantanderDados", "SantanderLayout", "SantanderController");
 
 
 //ROTA UNIBANCO
-//$route("UnibancoDados", "UnibancoLayout", "UnibancoController");
+//Route::integrate("UnibancoDados", "UnibancoLayout", "UnibancoController");
 

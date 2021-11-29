@@ -31,12 +31,21 @@ $boleto->DadosBanco(
             'R$',
         // $fator_vencimento  = string
             '?'
-            
+
         );
 
 
 
-$boleto->DadosUsuario();
+$boleto->DadosUsuario(
+    // $valor_unitario = string
+    '',
+    //$aceite = string
+    '',
+    //$especie = string
+    '',
+    //$especie_doc = string
+    ''
+);
 
 
 

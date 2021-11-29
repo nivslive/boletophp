@@ -6,7 +6,9 @@ class DadosGerais {
 // Os valores abaixo podem ser colocados manualmente ou ajustados p/ formulário c/ POST, GET ou de BD (MySql,Postgre,etc). ATT NIVAN_JR: Aplique os retornos de dados do BD no Constructor.	//
 
 // DADOS DO BOLETO PARA O SEU CLIENTE
-	
+
+public string $dados_boleto;
+
 public int $prazo_pagamento_dias;
 
 public float $taxa_boleto;
@@ -22,7 +24,13 @@ public string $valor_boleto;
 
 
     
-    public function __construct(){
+    public function __construct ($dados_boleto = '', 
+													$prazo_pagamento_dias = '', 
+													$taxa_boleto = 0.0,
+													$data_venc = '',
+													$valor_cobrado = '',
+													$valor_boleto = ''
+													){
 
 		//DADOS ÚNICOS DO BOLETO
 		$this->dados_boleto = $dados_boleto;

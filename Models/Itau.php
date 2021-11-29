@@ -1,7 +1,43 @@
 <?php
 $boleto = new Boleto;
+
+
+// DADOS GERAIS
+$boleto->DadosGerais(
+        
+        // $dados_boleto = string 
+            '20,0',
+        // $prazo_pagamento_dias = string
+            '4 dias',
+        // $taxa_boleto = float 
+            1.2,
+        // $data_venc = string
+            '4/2/2020',
+        // $valor_cobrado = string
+            '42,0',
+        //$valor_boleto = string
+            '20,2'
+        
+        );
+
+
+
+
+$boleto->DadosBanco(
+        
+        // $dados_banco = string 
+            '20,0',
+        // $moeda = string
+            'R$',
+        // $fator_vencimento  = string
+            '?'
+            
+        );
+
+
+
 $boleto->DadosUsuario();
-$boleto->DadosBanco();
+
 
 
 
